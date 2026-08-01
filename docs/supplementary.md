@@ -8,7 +8,7 @@ All experiments were conducted to ensure that differences in Token Specializatio
 
 - **Hardware:** Experiments were run in a Kaggle environment utilizing Dual NVIDIA T4 GPUs (2x 16GB VRAM) for the architectural scaling runs, and single NVIDIA T4 GPUs for ablation studies.
 - **Framework:** PyTorch 2.0+ with Automatic Mixed Precision (`torch.amp`) and `torch.backends.cudnn.benchmark=True` for optimized ViT throughput.
-- **Runtime Limits:** Due to 12-hour session limits on Kaggle, continuous checkpointing was implemented. Training states were resumed identically.
+- **Runtime Limits:** Due to 12-hour session limits on Kaggle, our optimized training loops executed a compressed 300-epoch schedule in ~3.3 hours on single T4 GPUs.
 
 ## 2. Dataset Specifics (CIFAR-10-LT & CIFAR-100-LT)
 
@@ -33,13 +33,13 @@ We utilized the standard exponential imbalance function to construct the long-ta
 ### 3.1 Network Training (Student)
 - **Architectures:** `deit_tiny_patch16_224`, `deit_small_patch16_224`, `deit_base_patch16_224`
 - **Optimizer:** AdamW
-- **Base Learning Rate:** 1e-3 (Tiny/Single GPU) / 2e-3 (Small/Base/Dual GPU)
+- **Base Learning Rate:** 1e-3 (Single GPU Ablations) / 2e-3 (Dual GPU Scaling)
 - **Weight Decay:** 0.05
 - **Scheduler:** CosineAnnealingLR ($T_{max} = Epochs$)
-- **Epochs:** 100
-- **DRW Epoch:** 80 (Deferred Reweighting begins at epoch 80)
-- **Batch Size:** 256 (Tiny) / 1024 (Scaled dual-GPU runs)
-- **Global Seed:** 42 (Enforced across numpy, random, and torch for strict reproducibility)
+- **Epochs:** 300
+- **DRW Epoch:** 240 (Deferred Reweighting begins at epoch 240, equivalent to the 80% mark of the schedule)
+- **Batch Size:** 256
+- **Global Seed:** 42 (Seed 100 utilized during variance ablations)
 
 ### 3.2 Teacher Architectures
 The CNN teacher models were initialized from standard pretrained weights and their final FC layers were re-initialized to match the target class count (10 or 100).

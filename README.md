@@ -74,13 +74,13 @@ If you find this observation useful in your research, please consider citing:
 ```bibtex
 @article{vip2026tokenspecialization,
   title={Understanding Token Specialization in Distilled Vision Transformers under Severe Data Imbalance},
-  author={Bharath VIP},
+  author={Bharath},
   journal={GitHub Repository},
   year={2026}
 }
 ```
 
 ## 📬 Contact
-**Bharath VIP**  
+**Bharath**  
 Research Project Repository  
 *This research was inspired by the works of Prof. R. Venkatesh Babu's Vision and AI Lab (VAL) at IISc.*
