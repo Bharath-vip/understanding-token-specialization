@@ -29,43 +29,38 @@ Is this an artifact of the dataset, the architecture, or KD? We ran a **No-KD Ca
 
 ## 🚀 How to Reproduce
 
-Our codebase is highly optimized. We provide standard PyTorch scripts for massive parallel execution and Jupyter Notebooks for interactive visualization.
+Our codebase is highly optimized and structured into logical experiment folders. Each folder contains the specific code, notebooks, and placeholders for your results and figures.
 
 ### Installation
 ```bash
-git clone https://github.com/Bharath-vip/understanding-token-specialization.git
+git clone https://github.com/Bharath/understanding-token-specialization.git
 cd understanding-token-specialization
 pip install -r requirements.txt
 ```
 
-### 1. The Causal Proof (No KD vs KD)
+### 1. The Baseline & Adaptive Token Fusion
+We provide Jupyter Notebooks for interactive visualization of the Token Specialization and the Neural Entropy Router.
+*   **Baseline:** `experiments/01_Baseline_Reproduction/DeiT_LT_Kaggle_IF50.ipynb`
+*   **Neural Router:** `experiments/02_Adaptive_Token_Fusion/DeiT_LT_Neural_Router.ipynb`
+
+### 2. The Causal Proof (No KD vs KD)
 To prove that Knowledge Distillation causes the specialization, run our lightweight Causal Baseline on CIFAR-10-LT:
 ```bash
-# Proves that without a teacher, CLS and DIST perform identically (No Specialization)
-python experiments/Phase6_Causal_NoKD.py --batch_size 256 --lr 1e-3
+# Proves that without a teacher, CLS and DIST perform identically
+python experiments/03_Causal_Proof_NoKD/Causal_NoKD.py --batch_size 256 --lr 1e-3
 ```
 
-### 2. Architecture Scaling (CIFAR-100-LT)
-We provide a massive batch-size (1024) script for testing the Neural Router across `deit_tiny`, `deit_small`, and `deit_base` under extreme imbalance (IF=50, 10 images in the tail):
+### 3. Architecture Scaling
+We provide scripts for testing the Neural Router across `deit_tiny`, `deit_small`, and `deit_base` under extreme imbalance:
 ```bash
-python experiments/Phase5_CIFAR100_LT.py --model deit_tiny_patch16_224
-python experiments/Phase5_CIFAR100_LT.py --model deit_small_patch16_224
-```
-*(Note: Supports automatic checkpointing for Kaggle/Colab preemption).*
-
-### 3. ImageNet-LT Scaling
-To test the phenomenon on large-scale datasets, run:
-```bash
-python experiments/Phase4_ImageNet_LT.py --batch_size 512
+python experiments/04_Architecture_Scaling/CIFAR100_LT_Scaling.py --model deit_tiny_patch16_224
+python experiments/04_Architecture_Scaling/ImageNet_LT_Scaling.py --batch_size 512
 ```
 
 ---
 
 ## 📊 Results & Visualization
-We provide a full suite of interactive Jupyter Notebooks in the `notebooks/` directory to visualize the Confusion Matrices, the Oracle Alpha Search, and the Neural Router's dynamic blending weights.
-- `notebooks/DeiT_LT_ATF_Final.ipynb`: Complete visualization suite.
-
-*(Visual figures and comprehensive result tables are available in the `figures/` and `docs/` directories).*
+Inside each experiment folder (e.g., `experiments/01_Baseline_Reproduction/`), you will find dedicated `results/` and `figures/` directories. This ensures that logs, CSVs, and plots are kept strictly organized by the experiment that generated them.
 
 ---
 
