@@ -1,0 +1,76 @@
+Class distribution: [5000, 3237, 2096, 1357, 878, 568, 368, 238, 154, 100]
+Ep 010 [36.1s] | L:3.228 LR:1.0e-03 | Acc:[CLS:25.6 DIST:27.5 AVG:26.4] | HMT:[H:71.7 M:12.1 T:0.0] | Cos:0.999 | Ent:1.849
+Ep 020 [36.2s] | L:3.024 LR:9.9e-04 | Acc:[CLS:31.5 DIST:33.7 AVG:32.7] | HMT:[H:70.4 M:28.8 T:0.2] | Cos:0.997 | Ent:1.854
+Ep 030 [36.2s] | L:2.902 LR:9.8e-04 | Acc:[CLS:34.3 DIST:38.2 AVG:35.9] | HMT:[H:74.9 M:32.3 T:1.6] | Cos:0.999 | Ent:1.859
+Ep 040 [37.4s] | L:2.785 LR:9.6e-04 | Acc:[CLS:36.9 DIST:40.0 AVG:38.4] | HMT:[H:78.1 M:34.6 T:3.9] | Cos:0.998 | Ent:1.847
+Ep 050 [37.7s] | L:2.672 LR:9.4e-04 | Acc:[CLS:40.7 DIST:46.9 AVG:43.2] | HMT:[H:77.1 M:44.9 T:6.9] | Cos:0.999 | Ent:1.851
+Ep 060 [36.8s] | L:2.663 LR:9.1e-04 | Acc:[CLS:46.2 DIST:51.4 AVG:47.7] | HMT:[H:81.8 M:48.5 T:12.5] | Cos:0.999 | Ent:1.875
+Ep 070 [36.4s] | L:2.550 LR:8.8e-04 | Acc:[CLS:47.4 DIST:56.2 AVG:50.3] | HMT:[H:81.2 M:51.5 T:17.9] | Cos:0.999 | Ent:1.869
+Ep 080 [36.7s] | L:2.430 LR:8.4e-04 | Acc:[CLS:46.0 DIST:55.5 AVG:50.5] | HMT:[H:83.0 M:50.0 T:18.6] | Cos:0.999 | Ent:1.860
+Ep 090 [36.6s] | L:2.430 LR:8.0e-04 | Acc:[CLS:45.9 DIST:55.1 AVG:50.1] | HMT:[H:87.5 M:46.6 T:17.4] | Cos:0.999 | Ent:1.861
+Ep 100 [38.2s] | L:2.341 LR:7.5e-04 | Acc:[CLS:55.9 DIST:63.2 AVG:59.2] | HMT:[H:80.9 M:62.3 T:33.5] | Cos:0.998 | Ent:1.867
+Ep 110 [37.0s] | L:2.322 LR:7.1e-04 | Acc:[CLS:47.4 DIST:57.2 AVG:52.2] | HMT:[H:86.1 M:47.8 T:24.2] | Cos:0.999 | Ent:1.864
+Ep 120 [36.9s] | L:2.030 LR:6.6e-04 | Acc:[CLS:58.9 DIST:66.3 AVG:63.0] | HMT:[H:85.6 M:62.3 T:41.3] | Cos:0.998 | Ent:1.831
+Ep 130 [37.0s] | L:2.157 LR:6.1e-04 | Acc:[CLS:56.0 DIST:65.8 AVG:61.0] | HMT:[H:86.7 M:58.1 T:39.2] | Cos:0.997 | Ent:1.858
+Ep 140 [37.0s] | L:2.188 LR:5.6e-04 | Acc:[CLS:55.3 DIST:67.1 AVG:61.0] | HMT:[H:88.0 M:57.7 T:38.5] | Cos:0.996 | Ent:1.883
+Ep 150 [37.2s] | L:2.061 LR:5.1e-04 | Acc:[CLS:53.9 DIST:66.1 AVG:59.4] | HMT:[H:87.4 M:56.6 T:35.2] | Cos:0.996 | Ent:1.856
+Ep 160 [38.4s] | L:2.142 LR:4.5e-04 | Acc:[CLS:57.9 DIST:67.7 AVG:63.0] | HMT:[H:87.9 M:63.8 T:37.0] | Cos:0.995 | Ent:1.878
+Ep 170 [37.3s] | L:2.076 LR:4.0e-04 | Acc:[CLS:59.2 DIST:68.8 AVG:64.5] | HMT:[H:86.4 M:63.4 T:44.0] | Cos:0.993 | Ent:1.871
+Ep 180 [37.0s] | L:1.947 LR:3.5e-04 | Acc:[CLS:60.0 DIST:71.7 AVG:66.3] | HMT:[H:88.5 M:63.1 T:48.2] | Cos:0.991 | Ent:1.861
+Ep 190 [37.1s] | L:1.692 LR:3.0e-04 | Acc:[CLS:60.9 DIST:71.6 AVG:66.9] | HMT:[H:90.1 M:64.4 T:47.0] | Cos:0.991 | Ent:1.823
+Ep 200 [37.4s] | L:1.745 LR:2.5e-04 | Acc:[CLS:61.4 DIST:72.3 AVG:67.7] | HMT:[H:89.8 M:64.0 T:50.5] | Cos:0.989 | Ent:1.844
+Ep 210 [37.1s] | L:1.706 LR:2.1e-04 | Acc:[CLS:62.7 DIST:74.0 AVG:69.3] | HMT:[H:89.0 M:67.5 T:52.1] | Cos:0.988 | Ent:1.831
+Ep 220 [37.0s] | L:1.897 LR:1.7e-04 | Acc:[CLS:64.4 DIST:73.9 AVG:70.8] | HMT:[H:89.6 M:65.7 T:58.7] | Cos:0.987 | Ent:1.865
+Ep 230 [37.2s] | L:1.901 LR:1.3e-04 | Acc:[CLS:64.7 DIST:75.0 AVG:71.5] | HMT:[H:89.8 M:67.2 T:59.0] | Cos:0.983 | Ent:1.881
+Ep 240 [37.4s] | L:1.887 LR:9.9e-05 | Acc:[CLS:64.3 DIST:74.8 AVG:70.8] | HMT:[H:90.7 M:66.0 T:57.1] | Cos:0.983 | Ent:1.869
+Ep 250 [37.5s] | L:1.800 LR:7.0e-05 | Acc:[CLS:64.6 DIST:75.2 AVG:71.2] | HMT:[H:89.5 M:67.8 T:57.3] | Cos:0.982 | Ent:1.862
+Ep 260 [37.8s] | L:1.846 LR:4.5e-05 | Acc:[CLS:64.0 DIST:74.7 AVG:70.9] | HMT:[H:90.8 M:67.5 T:55.4] | Cos:0.979 | Ent:1.873
+Ep 270 [37.9s] | L:1.659 LR:2.6e-05 | Acc:[CLS:64.3 DIST:75.1 AVG:71.1] | HMT:[H:90.0 M:67.8 T:56.7] | Cos:0.977 | Ent:1.840
+Ep 280 [37.4s] | L:0.269 LR:1.2e-05 | Acc:[CLS:70.9 DIST:75.1 AVG:73.5] | HMT:[H:89.1 M:68.3 T:64.7] | Cos:0.974 | Ent:1.693
+Ep 290 [37.4s] | L:0.222 LR:3.3e-06 | Acc:[CLS:70.7 DIST:75.0 AVG:73.5] | HMT:[H:89.1 M:68.0 T:65.1] | Cos:0.971 | Ent:1.692
+Ep 300 [38.4s] | L:0.210 LR:2.7e-08 | Acc:[CLS:70.5 DIST:74.9 AVG:73.2] | HMT:[H:89.2 M:67.8 T:64.4] | Cos:0.970 | Ent:1.692
+
+==================================================
+FINAL PER-CLASS ACCURACY (EPOCH 300)
+==================================================
+Class  | Count  | CLS Acc    | DIST Acc  
+0      | 5000   | 92.9       | 89.5      
+1      | 3237   | 96.5       | 93.1      
+2      | 2096   | 79.4       | 76.3      
+3      | 1357   | 69.5       | 63.2      
+4      | 878    | 69.4       | 70.3      
+5      | 568    | 55.3       | 64.7      
+6      | 368    | 71.2       | 76.5      
+7      | 238    | 61.0       | 63.0      
+8      | 154    | 61.0       | 80.4      
+9      | 100    | 48.6       | 71.5      
+==================================================
+Adaptive Token Fusion (ATF) - Oracle Search
+
+Extracting Test Set Logits...
+
+--- Oracle Alpha Search ---
+Class  0 (n=5000) | Best alpha*: 0.80 | Acc: 93.20%
+Class  1 (n=3237) | Best alpha*: 1.00 | Acc: 96.50%
+Class  2 (n=2096) | Best alpha*: 1.00 | Acc: 79.40%
+Class  3 (n=1357) | Best alpha*: 1.00 | Acc: 69.50%
+Class  4 (n= 878) | Best alpha*: 0.05 | Acc: 70.40%
+Class  5 (n= 568) | Best alpha*: 0.05 | Acc: 64.80%
+Class  6 (n= 368) | Best alpha*: 0.00 | Acc: 76.50%
+Class  7 (n= 238) | Best alpha*: 0.05 | Acc: 63.10%
+Class  8 (n= 154) | Best alpha*: 0.00 | Acc: 80.40%
+Class  9 (n= 100) | Best alpha*: 0.00 | Acc: 71.50%
+
+
+Parametric ATF Optimization (3-Parameter Spline)
+
+Optimizing ATF Parameters...
+
+Optimized Parameters: w1=0.000, w2=0.000, b=-1.000
+========================================
+Baseline (50/50) Accuracy: 73.22%
+ATF Boosted Accuracy:      74.40%
+Absolute Improvement:      +1.18%
+========================================
+
+csv link - https://storage.googleapis.com/kaggle-script-versions/338985351/output/training_metrics.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T192558Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=83f035a47f6e5aef0e3c175c7ce4fdd6e0d82525dcbadf6ab8ab3182a4415cc2334a807390a3339c2d3ac29ef25ad5bacdaed1bc127e123a0f2cca4d68fff376fc37ce9c11776a070df9201a29fd109cc3de4a957925820929f12fa4a2c8a7bf269a717269ec7e1a0c366017a525711f77ba142cd3af3ae6bede588cd2b01e0c99c368e059060ea6037c1c72beb47055223224dc2497ab935ed94f4a7d0ddd3f8a817adc7dcd136941559e7577cf31ce66b2b3d81266ab4f78ba1f4af4167c9eadc359a41b63734c4a2d464c19c673f110d753dfe4046bedfc0f38f2d6d848b6f6ec868c8ef79218363e3ac0df090fbeb2e517eb9a261b49bdc4b2ed8ae626e9

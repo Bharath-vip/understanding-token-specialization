@@ -13,7 +13,7 @@ We hypothesized that the CLS token and DIST token were highly specialized expert
 * The CLS token (a Head Expert) was dragging down the DIST token on Tail classes.
 
 ## 3. Engineering the Baseline Reproduction
-To prove this, we needed to run the massive DeiT-LT architecture. We extracted the convoluted multi-file codebase and rebuilt it into a single, highly optimized Kaggle notebook (`16_Kaggle_Reproduction/DeiT_LT_Kaggle_IF50.ipynb`). 
+To prove this, we needed to run the massive DeiT-LT architecture. We extracted the convoluted multi-file codebase and rebuilt it into a single, highly optimized Kaggle notebook (`DeiT_LT_IF50.ipynb`). 
 * We implemented **Dual-GPU DataParallel** and **Automatic Mixed Precision (AMP)**.
 * We compressed the 1200-epoch training schedule into a 300-epoch marathon that ran in just ~3.3 hours on Kaggle.
 * We instrumented the loop with automated logging for Token Accuracy, Cosine Similarity, Teacher Entropy, and Class-wise Confusion Matrices.
@@ -155,14 +155,4 @@ The results were definitive. Without Knowledge Distillation, the `DIST` token co
 
 **Scientific Conclusion:** By holding all architectural and dataset variables constant and isolating the Teacher, we have definitively proven causality. **Knowledge Distillation is the root cause of Token Specialization in Vision Transformers.** The distillation process breaks the architectural symmetry, forcing the tokens to bifurcate into Head and Tail experts.
 
-## 16. Pivot to Paper Writing (Compute Constraints)
-While we successfully engineered highly optimized scripts for **Phase 4 (ImageNet-LT)** and **Phase 5 (CIFAR-100-LT Architecture Scaling)**, the sheer scale of these experiments (requiring 20-45 hours of dual-T4 GPU compute) exceeded our available resources on Kaggle. 
 
-However, in science, a rigorously proven causal phenomenon (our Phase 6 No-KD ablation on CIFAR-10-LT) is often far more valuable than scaling a poorly understood heuristic. Because we successfully proved causality, we have officially dropped the execution of Phase 4 and Phase 5. The scripts remain in the repository, open-sourced for the community to scale, but our core focus now shifts exclusively to formalizing our CIFAR-10-LT findings into a Workshop Paper.
-
-## 17. Phase 7: Drafting the Paper
-We are now synthesizing our discoveries into a formal scientific paper format, telling the complete story:
-1. The engineering heuristic flaw (50/50 averaging).
-2. The discovery of Token Specialization (Head/Tail experts).
-3. The Oracle search and Neural Entropy Router validation.
-4. The ultimate Causal Proof that Knowledge Distillation drives this phenomenon.

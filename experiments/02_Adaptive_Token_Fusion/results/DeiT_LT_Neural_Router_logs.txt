@@ -1,0 +1,94 @@
+Class distribution: [5000, 3237, 2096, 1357, 878, 568, 368, 238, 154, 100]
+Ep 010 [36.5s] | L:3.198 LR:1.0e-03 | Acc:[CLS:24.6 DIST:28.4 AVG:26.4] | HMT:[H:68.9 M:14.2 T:0.0] | Cos:0.709 | Ent:1.866
+Ep 020 [36.6s] | L:2.926 LR:9.9e-04 | Acc:[CLS:28.4 DIST:33.6 AVG:30.8] | HMT:[H:74.8 M:20.4 T:0.7] | Cos:0.830 | Ent:1.844
+Ep 030 [36.8s] | L:2.952 LR:9.8e-04 | Acc:[CLS:35.1 DIST:40.5 AVG:38.4] | HMT:[H:73.3 M:35.3 T:7.5] | Cos:0.885 | Ent:1.868
+Ep 040 [36.4s] | L:2.814 LR:9.6e-04 | Acc:[CLS:37.4 DIST:43.6 AVG:39.6] | HMT:[H:82.0 M:33.0 T:6.0] | Cos:0.873 | Ent:1.856
+Ep 050 [37.1s] | L:2.685 LR:9.4e-04 | Acc:[CLS:35.3 DIST:42.6 AVG:39.1] | HMT:[H:82.2 M:32.0 T:5.3] | Cos:0.902 | Ent:1.852
+Ep 060 [38.3s] | L:2.700 LR:9.1e-04 | Acc:[CLS:43.8 DIST:52.0 AVG:46.8] | HMT:[H:82.0 M:44.4 T:15.0] | Cos:0.885 | Ent:1.879
+Ep 070 [36.8s] | L:2.542 LR:8.8e-04 | Acc:[CLS:45.1 DIST:54.3 AVG:49.2] | HMT:[H:78.1 M:49.2 T:20.4] | Cos:0.911 | Ent:1.854
+Ep 080 [36.9s] | L:2.387 LR:8.4e-04 | Acc:[CLS:49.2 DIST:58.5 AVG:53.2] | HMT:[H:83.0 M:51.9 T:25.1] | Cos:0.922 | Ent:1.839
+Ep 090 [36.8s] | L:2.495 LR:8.0e-04 | Acc:[CLS:50.3 DIST:56.7 AVG:52.1] | HMT:[H:82.6 M:59.2 T:12.3] | Cos:0.922 | Ent:1.877
+Ep 100 [36.9s] | L:2.307 LR:7.5e-04 | Acc:[CLS:52.1 DIST:59.6 AVG:54.8] | HMT:[H:86.3 M:54.5 T:23.7] | Cos:0.918 | Ent:1.845
+Ep 110 [37.1s] | L:2.370 LR:7.1e-04 | Acc:[CLS:51.0 DIST:62.0 AVG:55.2] | HMT:[H:86.0 M:53.2 T:27.1] | Cos:0.918 | Ent:1.874
+Ep 120 [36.9s] | L:2.251 LR:6.6e-04 | Acc:[CLS:56.1 DIST:65.3 AVG:61.0] | HMT:[H:83.6 M:57.7 T:42.8] | Cos:0.925 | Ent:1.858
+Ep 130 [36.8s] | L:2.121 LR:6.1e-04 | Acc:[CLS:54.6 DIST:65.8 AVG:60.6] | HMT:[H:85.9 M:56.2 T:41.2] | Cos:0.906 | Ent:1.847
+Ep 140 [36.9s] | L:2.157 LR:5.6e-04 | Acc:[CLS:55.8 DIST:65.3 AVG:60.6] | HMT:[H:83.6 M:62.4 T:35.2] | Cos:0.908 | Ent:1.863
+Ep 150 [37.2s] | L:1.960 LR:5.1e-04 | Acc:[CLS:58.0 DIST:67.7 AVG:62.9] | HMT:[H:87.5 M:60.7 T:41.3] | Cos:0.917 | Ent:1.835
+Ep 160 [37.4s] | L:1.922 LR:4.5e-04 | Acc:[CLS:57.1 DIST:68.2 AVG:63.3] | HMT:[H:88.0 M:58.7 T:44.7] | Cos:0.916 | Ent:1.841
+Ep 170 [37.5s] | L:1.952 LR:4.0e-04 | Acc:[CLS:61.1 DIST:69.8 AVG:65.9] | HMT:[H:88.3 M:62.0 T:48.6] | Cos:0.911 | Ent:1.850
+Ep 180 [37.2s] | L:2.027 LR:3.5e-04 | Acc:[CLS:61.1 DIST:71.0 AVG:66.8] | HMT:[H:86.4 M:65.0 T:49.5] | Cos:0.909 | Ent:1.870
+Ep 190 [37.7s] | L:2.008 LR:3.0e-04 | Acc:[CLS:63.1 DIST:72.5 AVG:69.1] | HMT:[H:88.5 M:65.3 T:54.8] | Cos:0.903 | Ent:1.865
+Ep 200 [37.4s] | L:1.918 LR:2.5e-04 | Acc:[CLS:61.8 DIST:71.4 AVG:67.3] | HMT:[H:89.5 M:65.8 T:47.3] | Cos:0.897 | Ent:1.861
+Ep 210 [38.5s] | L:1.813 LR:2.1e-04 | Acc:[CLS:61.0 DIST:71.5 AVG:66.7] | HMT:[H:90.2 M:62.5 T:48.7] | Cos:0.896 | Ent:1.844
+Ep 220 [38.2s] | L:1.914 LR:1.7e-04 | Acc:[CLS:63.1 DIST:73.3 AVG:68.8] | HMT:[H:88.3 M:67.5 T:51.2] | Cos:0.892 | Ent:1.876
+Ep 230 [37.6s] | L:1.919 LR:1.3e-04 | Acc:[CLS:61.9 DIST:73.3 AVG:69.0] | HMT:[H:89.8 M:65.4 T:53.0] | Cos:0.887 | Ent:1.873
+Ep 240 [37.4s] | L:1.943 LR:9.9e-05 | Acc:[CLS:61.9 DIST:73.1 AVG:68.4] | HMT:[H:89.0 M:66.2 T:50.7] | Cos:0.885 | Ent:1.876
+Ep 250 [37.4s] | L:1.838 LR:7.0e-05 | Acc:[CLS:63.3 DIST:73.8 AVG:69.9] | HMT:[H:89.1 M:68.0 T:53.0] | Cos:0.879 | Ent:1.867
+Ep 260 [37.7s] | L:1.772 LR:4.5e-05 | Acc:[CLS:64.6 DIST:74.8 AVG:70.7] | HMT:[H:89.1 M:68.2 T:55.8] | Cos:0.877 | Ent:1.859
+Ep 270 [37.5s] | L:1.916 LR:2.6e-05 | Acc:[CLS:64.5 DIST:75.0 AVG:71.2] | HMT:[H:89.4 M:68.7 T:56.3] | Cos:0.870 | Ent:1.882
+Ep 280 [37.3s] | L:0.257 LR:1.2e-05 | Acc:[CLS:69.7 DIST:74.1 AVG:72.4] | HMT:[H:88.3 M:67.7 T:62.6] | Cos:0.884 | Ent:1.693
+Ep 290 [38.6s] | L:0.207 LR:3.3e-06 | Acc:[CLS:69.3 DIST:73.8 AVG:72.3] | HMT:[H:87.9 M:67.8 T:62.6] | Cos:0.878 | Ent:1.693
+Ep 300 [37.5s] | L:0.198 LR:2.7e-08 | Acc:[CLS:69.2 DIST:73.8 AVG:72.1] | HMT:[H:88.0 M:67.5 T:62.3] | Cos:0.877 | Ent:1.693
+
+==================================================
+FINAL PER-CLASS ACCURACY (EPOCH 300)
+==================================================
+Class  | Count  | CLS Acc    | DIST Acc  
+0      | 5000   | 93.1       | 88.7      
+1      | 3237   | 96.0       | 92.2      
+2      | 2096   | 77.0       | 75.1      
+3      | 1357   | 66.7       | 60.0      
+4      | 878    | 69.9       | 68.1      
+5      | 568    | 55.7       | 66.5      
+6      | 368    | 72.0       | 74.8      
+7      | 238    | 58.5       | 62.8      
+8      | 154    | 57.5       | 77.2      
+9      | 100    | 45.3       | 72.8      
+==================================================
+
+Adaptive Token Fusion (ATF) - Oracle Search
+
+Extracting Test Set Logits...
+
+--- Oracle Alpha Search ---
+Class  0 (n=5000) | Best alpha*: 1.00 | Acc: 93.10%
+Class  1 (n=3237) | Best alpha*: 0.75 | Acc: 96.20%
+Class  2 (n=2096) | Best alpha*: 0.85 | Acc: 77.60%
+Class  3 (n=1357) | Best alpha*: 1.00 | Acc: 66.70%
+Class  4 (n= 878) | Best alpha*: 0.80 | Acc: 70.50%
+Class  5 (n= 568) | Best alpha*: 0.00 | Acc: 66.50%
+Class  6 (n= 368) | Best alpha*: 0.45 | Acc: 75.00%
+Class  7 (n= 238) | Best alpha*: 0.20 | Acc: 62.90%
+Class  8 (n= 154) | Best alpha*: 0.00 | Acc: 77.20%
+Class  9 (n= 100) | Best alpha*: 0.00 | Acc: 72.80%
+
+The Neural Entropy Router (MLP)
+
+
+Extracting Instance-Level Features (Confidence & Entropy)...
+
+Training the Neural Router (500 Epochs)...
+
+Epoch   0 | Loss: 0.9407 | Router Accuracy: 72.21%
+Epoch  50 | Loss: 0.8055 | Router Accuracy: 73.63%
+Epoch 100 | Loss: 0.7966 | Router Accuracy: 73.73%
+Epoch 150 | Loss: 0.7958 | Router Accuracy: 73.69%
+Epoch 200 | Loss: 0.7958 | Router Accuracy: 73.71%
+Epoch 250 | Loss: 0.7957 | Router Accuracy: 73.72%
+Epoch 300 | Loss: 0.7956 | Router Accuracy: 73.68%
+Epoch 350 | Loss: 0.7954 | Router Accuracy: 73.69%
+Epoch 400 | Loss: 0.7954 | Router Accuracy: 73.68%
+Epoch 450 | Loss: 0.7954 | Router Accuracy: 73.69%
+Epoch 499 | Loss: 0.7954 | Router Accuracy: 73.73%
+========================================
+Baseline (50/50) Accuracy: 72.01%
+Oracle Upper Bound:        74.40%
+Neural Router Accuracy:    73.73%
+========================================
+Learned Global Temps: T_CLS=1.375, T_DIST=1.616
+
+Average Router Alpha for Head Class 0: 0.031 (Oracle=0.95)
+Average Router Alpha for Tail Class 9: 0.077 (Oracle=0.00)
+-----------------------------------------
+
+csv link - https://storage.googleapis.com/kaggle-script-versions/339282798/output/training_metrics.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T192405Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=a2d9e96124ec9a1d3415d8f0ee24dca139af2d11033704dd3e040c4347cec9dd71f35a7dbff28e43ae4e9465c3becf0cc269829e903ecbf09a6ea0fbfaf71c879376f120f3f9b9d4c4d611fcc7ac8463786f2922d294b085eaa7bd2fcfcd99e0e21775233bd1b05fb799393cb738fe7e6913d91f827f7f03731d2e6174edf0e5f618a2443cfae8897495c0b616d3586fdffd53fded64196a65c9e5e316d999778b8bfd7a2c0d29b44eb38277593bfe821ece77587ed6ee6e43e39c589152158ba01c4cacf4621bb93112c407c3f6b634f03b906672b290d899c107bfd11c92392e2fe7212c7961a2621d3198aa16900c805189193191bcd673441ca0f0268fc5

@@ -1,0 +1,54 @@
+Class distribution: [5000, 3237, 2096, 1357, 878, 568, 368, 238, 154, 100]
+Ep 010 [36.9s] | L:3.209 LR:1.0e-03 | Acc:[CLS:25.4 DIST:28.0 AVG:27.1] | HMT:[H:72.5 M:13.2 T:0.0] | Cos:0.999 | Ent:1.861
+Ep 020 [37.0s] | L:3.072 LR:9.9e-04 | Acc:[CLS:28.3 DIST:34.0 AVG:31.3] | HMT:[H:71.8 M:24.4 T:0.0] | Cos:0.998 | Ent:1.857
+Ep 030 [38.0s] | L:2.993 LR:9.8e-04 | Acc:[CLS:30.2 DIST:37.4 AVG:34.4] | HMT:[H:76.6 M:28.1 T:0.8] | Cos:0.996 | Ent:1.854
+Ep 040 [37.6s] | L:2.876 LR:9.6e-04 | Acc:[CLS:37.6 DIST:43.3 AVG:40.2] | HMT:[H:76.8 M:35.8 T:9.3] | Cos:0.999 | Ent:1.865
+Ep 050 [37.7s] | L:2.767 LR:9.4e-04 | Acc:[CLS:40.0 DIST:46.0 AVG:42.9] | HMT:[H:76.2 M:42.8 T:9.7] | Cos:0.999 | Ent:1.865
+Ep 060 [37.8s] | L:2.689 LR:9.1e-04 | Acc:[CLS:40.4 DIST:49.5 AVG:44.0] | HMT:[H:81.4 M:38.2 T:14.1] | Cos:1.000 | Ent:1.853
+Ep 070 [37.6s] | L:2.601 LR:8.8e-04 | Acc:[CLS:42.9 DIST:51.8 AVG:46.4] | HMT:[H:78.8 M:45.3 T:15.4] | Cos:0.999 | Ent:1.862
+Ep 080 [38.4s] | L:2.472 LR:8.4e-04 | Acc:[CLS:48.4 DIST:53.5 AVG:50.7] | HMT:[H:82.3 M:50.8 T:18.8] | Cos:0.999 | Ent:1.853
+Ep 090 [37.7s] | L:2.504 LR:8.0e-04 | Acc:[CLS:45.6 DIST:53.4 AVG:49.6] | HMT:[H:83.6 M:48.0 T:17.7] | Cos:0.999 | Ent:1.877
+Ep 100 [37.7s] | L:2.328 LR:7.5e-04 | Acc:[CLS:51.0 DIST:59.4 AVG:54.8] | HMT:[H:83.3 M:54.5 T:26.9] | Cos:0.998 | Ent:1.860
+Ep 110 [38.0s] | L:2.267 LR:7.1e-04 | Acc:[CLS:56.3 DIST:62.8 AVG:59.7] | HMT:[H:85.1 M:55.4 T:40.1] | Cos:0.998 | Ent:1.852
+Ep 120 [38.0s] | L:2.285 LR:6.6e-04 | Acc:[CLS:52.9 DIST:62.4 AVG:57.0] | HMT:[H:85.4 M:55.4 T:30.7] | Cos:0.999 | Ent:1.868
+Ep 130 [38.4s] | L:2.277 LR:6.1e-04 | Acc:[CLS:55.4 DIST:66.0 AVG:61.2] | HMT:[H:84.0 M:59.8 T:40.1] | Cos:0.999 | Ent:1.873
+Ep 140 [37.9s] | L:2.105 LR:5.6e-04 | Acc:[CLS:55.0 DIST:64.4 AVG:59.8] | HMT:[H:87.2 M:58.5 T:34.1] | Cos:0.998 | Ent:1.847
+Ep 150 [37.9s] | L:2.236 LR:5.1e-04 | Acc:[CLS:58.5 DIST:68.1 AVG:63.6] | HMT:[H:87.8 M:59.9 T:44.3] | Cos:0.998 | Ent:1.873
+Ep 160 [38.3s] | L:2.048 LR:4.5e-04 | Acc:[CLS:56.4 DIST:66.5 AVG:61.1] | HMT:[H:87.8 M:61.1 T:34.4] | Cos:0.997 | Ent:1.861
+Ep 170 [38.0s] | L:2.087 LR:4.0e-04 | Acc:[CLS:58.3 DIST:70.2 AVG:64.9] | HMT:[H:87.3 M:62.2 T:46.1] | Cos:0.997 | Ent:1.866
+Ep 180 [37.9s] | L:1.843 LR:3.5e-04 | Acc:[CLS:59.3 DIST:70.4 AVG:65.3] | HMT:[H:87.8 M:63.1 T:45.7] | Cos:0.996 | Ent:1.833
+Ep 190 [37.9s] | L:2.020 LR:3.0e-04 | Acc:[CLS:61.1 DIST:70.5 AVG:66.2] | HMT:[H:89.6 M:61.4 T:49.1] | Cos:0.995 | Ent:1.869
+Ep 200 [37.9s] | L:2.071 LR:2.5e-04 | Acc:[CLS:63.0 DIST:73.0 AVG:68.5] | HMT:[H:88.4 M:66.3 T:51.7] | Cos:0.993 | Ent:1.878
+Ep 210 [38.2s] | L:1.825 LR:2.1e-04 | Acc:[CLS:61.8 DIST:72.3 AVG:68.1] | HMT:[H:87.6 M:64.1 T:53.8] | Cos:0.993 | Ent:1.853
+Ep 220 [39.1s] | L:1.965 LR:1.7e-04 | Acc:[CLS:61.8 DIST:71.7 AVG:66.9] | HMT:[H:90.1 M:63.1 T:48.8] | Cos:0.992 | Ent:1.872
+Ep 230 [38.3s] | L:1.795 LR:1.3e-04 | Acc:[CLS:64.3 DIST:73.9 AVG:70.2] | HMT:[H:89.3 M:66.6 T:55.8] | Cos:0.992 | Ent:1.847
+Ep 240 [39.0s] | L:1.857 LR:9.9e-05 | Acc:[CLS:64.5 DIST:74.5 AVG:70.6] | HMT:[H:88.7 M:67.2 T:57.2] | Cos:0.991 | Ent:1.855
+Ep 250 [38.3s] | L:1.942 LR:7.0e-05 | Acc:[CLS:63.1 DIST:74.5 AVG:69.9] | HMT:[H:89.0 M:67.3 T:54.4] | Cos:0.990 | Ent:1.872
+Ep 260 [38.6s] | L:1.991 LR:4.5e-05 | Acc:[CLS:63.6 DIST:74.7 AVG:70.5] | HMT:[H:89.8 M:66.3 T:56.6] | Cos:0.989 | Ent:1.882
+Ep 270 [38.5s] | L:1.781 LR:2.6e-05 | Acc:[CLS:64.5 DIST:75.1 AVG:71.0] | HMT:[H:90.0 M:66.6 T:58.0] | Cos:0.988 | Ent:1.854
+Ep 280 [38.0s] | L:0.308 LR:1.2e-05 | Acc:[CLS:71.2 DIST:74.6 AVG:73.3] | HMT:[H:88.1 M:68.4 T:65.0] | Cos:0.986 | Ent:1.688
+Ep 290 [38.0s] | L:0.271 LR:3.3e-06 | Acc:[CLS:71.3 DIST:74.5 AVG:73.2] | HMT:[H:87.9 M:67.8 T:65.7] | Cos:0.985 | Ent:1.687
+Ep 300 [38.1s] | L:0.259 LR:2.7e-08 | Acc:[CLS:71.3 DIST:74.5 AVG:73.1] | HMT:[H:87.7 M:67.8 T:65.6] | Cos:0.985 | Ent:1.688
+
+==================================================
+FINAL PER-CLASS ACCURACY (EPOCH 300)
+==================================================
+Class  | Count  | CLS Acc    | DIST Acc  
+0      | 5000   | 93.2       | 89.3      
+1      | 3237   | 94.8       | 92.9      
+2      | 2096   | 77.5       | 74.8      
+3      | 1357   | 68.1       | 61.7      
+4      | 878    | 67.2       | 68.5      
+5      | 568    | 59.3       | 66.9      
+6      | 368    | 73.1       | 77.2      
+7      | 238    | 63.8       | 64.1      
+8      | 154    | 62.3       | 79.2      
+9      | 100    | 54.1       | 70.7      
+==================================================
+
+
+CSV LINK - https://storage.googleapis.com/kaggle-script-versions/338985107/output/training_metrics.csv?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=gcp-kaggle-com%40kaggle-161607.iam.gserviceaccount.com%2F20260802%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260802T190846Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=2db11c3078ab354b4b573f21b693c6f13e2c8cb9708294bd78e04fdebfc771e4ee051171d8e0da5cb727c62c2ac9e84e2ee7333dc57ce4694b37a0f258c472f1795df488cc080a5b6ecf536ea4b6c36c584f758834d621e984be9b0cf16ad2424e1c5e6369006b5b8b81a4aad3cf9adc4b302855951f65de6dfb6149deb9a548ab1e33f7df7994eb64dcb98d8a8111a569465d0a589f4540255c09b67549b6760ab198835688a22508c13ead870ce4012d25661a0d050ff51026519eff341ca1cd93a206e737f923691d5e2ed2f61d99bacae31820c2fb7c6485b6c4737f2439d73c7ede47b085ce967f07a023d384da8aca1404770d2fc1aaea6d68a6baa1bb
+
+
+
+

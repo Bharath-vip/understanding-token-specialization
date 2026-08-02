@@ -1,0 +1,48 @@
+============================================================
+STARTING CAUSAL EXPERIMENT: NO KNOWLEDGE DISTILLATION
+Model: deit_tiny_patch16_224
+============================================================
+Ep 010 [27.7s] | Acc:[CLS:51.5 DIST:49.3]
+           | CLS Tail: 12.7%
+           | DIST Tail: 12.1%
+Ep 020 [27.7s] | Acc:[CLS:61.2 DIST:61.2]
+           | CLS Tail: 25.3%
+           | DIST Tail: 24.2%
+Ep 030 [27.7s] | Acc:[CLS:71.2 DIST:71.7]
+           | CLS Tail: 29.4%
+           | DIST Tail: 31.9%
+Ep 040 [27.5s] | Acc:[CLS:72.8 DIST:73.6]
+           | CLS Tail: 48.4%
+           | DIST Tail: 47.4%
+Ep 050 [27.9s] | Acc:[CLS:74.9 DIST:75.0]
+           | CLS Tail: 56.9%
+           | DIST Tail: 56.7%
+Ep 060 [28.1s] | Acc:[CLS:80.3 DIST:80.9]
+           | CLS Tail: 55.3%
+           | DIST Tail: 56.0%
+Ep 070 [27.7s] | Acc:[CLS:77.8 DIST:78.1]
+           | CLS Tail: 52.7%
+           | DIST Tail: 52.5%
+Ep 080 [27.8s] | Acc:[CLS:78.4 DIST:79.0]
+           | CLS Tail: 48.9%
+           | DIST Tail: 49.1%
+Ep 090 [27.4s] | Acc:[CLS:83.4 DIST:83.7]
+           | CLS Tail: 69.2%
+           | DIST Tail: 68.9%
+Ep 100 [27.6s] | Acc:[CLS:83.1 DIST:83.3]
+           | CLS Tail: 65.8%
+           | DIST Tail: 66.5%
+
+Training Neural Router...
+
+==================================================
+PHASE 6 CAUSAL EXPERIMENT (NO-KD) RESULTS
+==================================================
+CLS Token Native Acc:  83.08%
+DIST Token Native Acc: 83.26%
+50/50 Baseline Acc:    83.30%
+Neural Router Acc:     83.02%
+
+ROUTER ANALYSIS:
+Average Route Alpha: 0.249 (If this is ~0.5, then KD was the cause!)
+==================================================
