@@ -1,81 +1,57 @@
 # Understanding Token Specialization in Distilled Vision Transformers
 
-<div align="center">
-  <h3>Understanding Token Specialization in Distilled Vision Transformers under Severe Data Imbalance</h3>
-  <p>A systematic investigation into how Knowledge Distillation fundamentally alters token behavior in Vision Transformers, causing structural bifurcation into mutually exclusive Head and Tail experts.</p>
-</div>
+![Problem Overview](Problem%20Overview.svg)
+
+## 📌 Project Overview
+This repository contains the code, data, and findings from an independent structural audit of Knowledge Distillation (KD) in Vision Transformers (ViTs), specifically focusing on long-tailed data distributions. 
+
+The standard inference heuristic for distilled ViTs relies on a rigid 50/50 averaging of the Class (`CLS`) and Distillation (`DIST`) tokens. Through rigorous experimentation, we uncover that under severe data starvation, these tokens do not learn redundant features; rather, they bifurcate into mutually exclusive experts. 
+
+**Key Findings:**
+1. **Token Bifurcation:** The `CLS` token functions as a Head-class expert, while the `DIST` token dominates the Tail.
+2. **Expert Sabotage:** The fixed 50/50 inference heuristic actively suppresses model performance by forcing the Head expert to drag down the Tail expert's predictions, and vice versa.
+3. **Entropy-Guided Routing:** We demonstrate that instance-level uncertainty (Shannon Entropy) can successfully act as a class-agnostic routing mechanism to recover this suppressed performance.
+4. **Causal Proof:** Through a No-KD baseline, we provide strong empirical evidence that Knowledge Distillation—not inherent architectural bias—is the causal driver of this specialization.
 
 ---
 
-## 📖 The Problem
-Vision Transformers (ViTs) are notoriously data-hungry and struggle significantly under long-tailed data distributions (e.g., CIFAR-100-LT, ImageNet-LT). Recent state-of-the-art methods like **DeiT-LT** utilize Knowledge Distillation (KD) and a specialized Distillation (`DIST`) token to force a ViT student to learn from a robust CNN teacher.
+## 📂 Repository Structure
 
-However, during inference, the standard practice is to rigidly average the outputs of the `CLS` and `DIST` tokens (a 50/50 split). **No one asked what happens inside the `CLS` and `DIST` tokens under data starvation.**
+The project is structured logically around the core experiments rather than file types, allowing researchers to explore the specific code, notebooks, and resulting data for each stage of the journey.
 
-## 🔬 What We Discovered (The Phenomenon)
-We conducted a deep architectural audit of distilled ViTs and discovered a profound scientific phenomenon: **Knowledge Distillation causes Token Specialization.**
-1. **The Head Expert:** The `CLS` token saturates on majority (Head) classes.
-2. **The Tail Expert:** The `DIST` token learns from the teacher to dominate minority (Tail) classes.
+### `docs/`
+Contains the formal scientific documentation.
+* `paper.pdf`: The complete, CVPR-formatted research paper detailing the methodology, results, and causal arguments.
+* `Technical_Report.md`: A highly readable, two-page executive summary of the project.
+* `supplementary.md`: Detailed hyperparameters, hardware specifications, and exact reproduction environments.
 
-Because the tokens become mutually exclusive experts, **the 50/50 averaging heuristic causes Expert Sabotage.** The Head expert drags down the Tail expert, and vice versa.
-
-### The Solution: Neural Entropy Router
-We propose an **Adaptive Token Fusion (ATF)** mechanism via a **Neural Entropy Router**. Instead of a fixed 50/50 split, our lightweight MLP dynamically routes token logits based on instance-level *Confidence* and *Shannon Entropy*. 
-
-### The Causal Proof
-Is this an artifact of the dataset, the architecture, or KD? We ran a **No-KD Causal Baseline** (`Phase6_Causal_NoKD.py`). By training the exact same DeiT architecture on CIFAR-10-LT *without* the Teacher model, the tokens completely lost their specialization and collapsed symmetrically. We definitively prove that **Knowledge Distillation is the causal driver of Token Specialization.**
-
----
-
-## 🚀 How to Reproduce
-
-Our codebase is highly optimized and structured into logical experiment folders. Each folder contains the specific code, notebooks, and placeholders for your results and figures.
-
-### Installation
-```bash
-git clone https://github.com/Bharath/understanding-token-specialization.git
-cd understanding-token-specialization
-pip install -r requirements.txt
-```
-
-### 1. The Baseline & Adaptive Token Fusion
-We provide Jupyter Notebooks for interactive visualization of the Token Specialization and the Neural Entropy Router.
-*   **Baseline:** `experiments/01_Baseline_Reproduction/DeiT_LT_Kaggle_IF50.ipynb`
-*   **Neural Router:** `experiments/02_Adaptive_Token_Fusion/DeiT_LT_Neural_Router.ipynb`
-
-### 2. The Causal Proof (No KD vs KD)
-To prove that Knowledge Distillation causes the specialization, run our lightweight Causal Baseline on CIFAR-10-LT:
-```bash
-# Proves that without a teacher, CLS and DIST perform identically
-python experiments/03_Causal_Proof_NoKD/Causal_NoKD.py --batch_size 256 --lr 1e-3
-```
-
-### 3. Architecture Scaling
-We provide scripts for testing the Neural Router across `deit_tiny`, `deit_small`, and `deit_base` under extreme imbalance:
-```bash
-python experiments/04_Architecture_Scaling/CIFAR100_LT_Scaling.py --model deit_tiny_patch16_224
-python experiments/04_Architecture_Scaling/ImageNet_LT_Scaling.py --batch_size 512
-```
+### `experiments/`
+Contains the monolithic scripts, interactive Jupyter Notebooks, raw logs, and visual figures (Confusion Matrices, Oracle Curves) grouped by their scientific objective.
+* **`01_Baseline_Reproduction/`**: The fundamental reproduction of DeiT-LT on CIFAR-10-LT exposing the token bifurcation.
+* **`02_Adaptive_Token_Fusion/`**: The empirical Oracle Alpha search and the implementation of the Neural Entropy Router.
+* **`03_Causal_Proof_NoKD/`**: The definitive test proving that removing the Teacher model eliminates the token specialization.
+* **`04_Architecture_Scaling/`**: Extensive ablation testing across DeiT-Small (22M), DeiT-Base (86M), and varying imbalance factors to prove scale-invariance.
 
 ---
 
-## 📊 Results & Visualization
-Inside each experiment folder (e.g., `experiments/01_Baseline_Reproduction/`), you will find dedicated `results/` and `figures/` directories. This ensures that logs, CSVs, and plots are kept strictly organized by the experiment that generated them.
+## 📖 Methodology & Research Journey
+For a visual overview of how this investigation progressed from an initial observation to a definitive causal proof, see the Research Journey flowchart:
+
+![Research Journey](Research%20Journey.svg)
 
 ---
 
-## 📝 Citation
-If you find this observation useful in your research, please consider citing:
+## 📬 Contact & Citation
+
+**Bharath**  
+Final Year B.Tech | Artificial Intelligence and Data Science  
+*This independent research study was inspired by the CVPR 2024 works of Prof. R. Venkatesh Babu's Vision and AI Lab (VAL) at IISc.*
+
 ```bibtex
-@article{vip2026tokenspecialization,
+@article{bharath2026tokenspecialization,
   title={Understanding Token Specialization in Distilled Vision Transformers under Severe Data Imbalance},
   author={Bharath},
   journal={GitHub Repository},
   year={2026}
 }
 ```
-
-## 📬 Contact
-**Bharath**  
-Research Project Repository  
-*This research was inspired by the works of Prof. R. Venkatesh Babu's Vision and AI Lab (VAL) at IISc.*
