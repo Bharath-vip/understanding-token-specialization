@@ -1,8 +1,5 @@
 # Technical Report: Token Specialization in Distilled Vision Transformers
 
-**Author:** Bharath  
-**Date:** August 2026  
-**Repository:** [understanding-token-specialization](https://github.com/Bharath/understanding-token-specialization)
 
 ---
 
