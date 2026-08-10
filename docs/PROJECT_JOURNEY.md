@@ -92,9 +92,6 @@ The Knowledge Distillation process in this specific configuration did not just m
 
 The Neural Router, having no prior knowledge of class frequency, discovered this structural superiority via Entropy/Confidence analysis and delegated almost all authority to the `DIST` token, achieving a `+1.63%` absolute boost over the baseline.
 
-## Conclusion
-We started by identifying a fixed 50/50 average heuristic in a CVPR paper. We observed that the tokens possess specialized expertise, and we successfully built multi-parameter Logit-Space architectures to dynamically route predictions. Ultimately, our Neural Entropy Router demonstrated that the distilled `DIST` token is structurally superior to the `CLS` token in this evaluated setting, and that dynamic instance-level routing can successfully unleash its potential by overriding the rigid heuristic.
-
 ## 11. Phase 1 Ablations: Seeds & Imbalance Factors
 To validate these findings against the "harsh reviewer" standard, we executed a Phase 1 Ablation Suite, sweeping across Random Seeds (100) and Imbalance Factors (IF100, IF10).
 
@@ -155,4 +152,24 @@ The results were definitive. Without Knowledge Distillation, the `DIST` token co
 
 **Scientific Conclusion:** By holding all architectural and dataset variables constant and isolating the Teacher, we have definitively proven causality. **Knowledge Distillation is the root cause of Token Specialization in Vision Transformers.** The distillation process breaks the architectural symmetry, forcing the tokens to bifurcate into Head and Tail experts.
 
+## 16. The Deep Literature Review and Narrative Pivot
+Before drafting the final paper, we conducted a rigorous deep dive into the literature (arXiv, CVPR proceedings) targeting *Token Fusion* and *DeiT-LT*. 
+* We discovered that the original DeiT-LT authors *intentionally* trained the DIST token to be a tail expert using Out-of-Distribution (OOD) distillation. 
+* We discovered that while "Entropy Routing" exists in literature (e.g., A-ViT), it is used exclusively for *computational efficiency* (dropping tokens to save FLOPs), not for solving long-tailed data imbalances dynamically.
 
+This caused a massive **Narrative Pivot**. Instead of claiming we "discovered" token specialization, we pivoted to a much stronger, bulletproof academic argument: We acknowledged that prior works successfully engineered these experts, but mathematically proved that their **inference heuristic (50/50 static averaging) is fundamentally flawed** because it induces "Expert Sabotage". Our core novelty is explicitly diagnosing this sabotage and proposing the Neural Entropy Router to recover the latent performance dynamically.
+
+## 17. The 15-Page Journal Expansion
+We transformed our core findings from an extended abstract into a heavyweight, 10-15 page journal-ready CVPR manuscript (`docs/paper.tex`).
+*   **Mathematical Formalization:** We added rigorous equations detailing Gradient Starvation in self-attention versus the translational equivariance of the CNN teacher.
+*   **Universality Study:** We dedicated a full subsection to our Adam vs. SciPy optimizers study to mathematically validate the Oracle geometry.
+*   **Feature Analysis:** We explicitly detailed the Random Forest decision tree split criteria that proved Shannon Entropy commands 77.5\% predictive power.
+*   **Exhaustive Bibliography:** We expanded the literature review to 19 seminal citations, deeply anchoring our work in the context of MoE, Uncertainty Calibration, and Long-Tailed Learning.
+
+## 18. Outreach and Future Strategy
+With the repository finalized and the journal paper complete, we launched a highly structured outreach campaign. We drafted 9 highly personalized emails targeting the absolute top computer vision and representation learning researchers in India (including labs at IISc, IIT Madras, IIT Hyderabad, Microsoft Research India, and Adobe Research). Each email was dynamically tailored to hook the researcher using their specific domain (e.g., framing our token bifurcation as a discovery in Explainable AI for Prof. Vineeth Balasubramanian).
+
+**Future High-Impact Roadmaps:**
+1.  **ImageNet-LT Scaling:** Wait for the massive 45-hour Kaggle run to finish (or secure external cloud compute) to prove this behavior scales to 1,000 classes.
+2.  **Architectural Generality:** Test Swin Transformers and CaiT under distillation to prove the Token Specialization phenomenon is independent of the exact self-attention mechanism.
+3.  **Deep Feature Routing:** Upgrade the current logit-level MLP to a mini-attention gate that reads the raw 192-dimensional token embeddings before classification.
